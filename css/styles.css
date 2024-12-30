@@ -18,6 +18,10 @@ body {
     overflow: hidden;
 }
 
+img {
+    display: block;
+}
+
 a {
     text-decoration: none;
 }
@@ -126,10 +130,14 @@ color:#2e2f42;
 
 /* #region hero */
 
+.hero {
+padding: 188px 0;
+background-color: #2e2f42;
+}
+
 .hero .container {
-    background-color: #2e2f42;
+    
     width: 1440px;
-    padding: 188px 0;
 }
 
 .hero_title {
@@ -154,7 +162,7 @@ color:#2e2f42;
         background-color: #4d5ae5;
         border-radius: 4px;
         padding: 16px 32px;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         border: none;
         display: block;
@@ -209,9 +217,6 @@ font-weight: 400;
 
 .team {
     background-color: #f4f4fd;
-}
-
-.team .container {
     padding: 120px 0;
 }
 
@@ -227,7 +232,7 @@ padding: 32px 0
 .team_item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
-    
+    width: calc((100% - 72px) / 4);
 }
 
 .team_title {
@@ -269,7 +274,7 @@ font-weight: 400;
 
 /* #region portfolio */
 
-.portfolio .container {
+.portfolio {
     padding-top: 120px;
         padding-bottom: 120px;
 }
@@ -324,10 +329,7 @@ font-weight: 400;
 
 .footer {
     background-color: #2e2f42;
-}
-
-.footer .container {
-    padding: 100px 0
+    padding: 100px 0;
 }
 
 .footer .logo {
